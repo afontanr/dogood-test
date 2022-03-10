@@ -1,0 +1,15 @@
+server:
+  port: 7020
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: dogoodtest
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5434/postgres?currentSchema="dogood"
+    username: postgres
+    password: pass
+jwt:
+  secret: dogoodtest
