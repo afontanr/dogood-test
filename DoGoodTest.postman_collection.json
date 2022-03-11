@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "4c6c5f2a-814c-4027-a466-9a60d8e4ef2a",
+		"name": "DoGoodTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Record Penalty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userTo\": \"player2\",\r\n    \"amount\": 10,\r\n    \"recordType\": \"PENALTY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7020/api/user/admin/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7020",
+					"path": [
+						"api",
+						"user",
+						"admin",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record Earning",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userTo\": \"player2\",\r\n    \"amount\": 10,\r\n    \"recordType\": \"EARNING\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7020/api/user/admin/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7020",
+					"path": [
+						"api",
+						"user",
+						"admin",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record Donation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userTo\": \"player2\",\r\n    \"amount\": 2,\r\n    \"recordType\": \"DONATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7020/api/user/player1/donation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7020",
+					"path": [
+						"api",
+						"user",
+						"player1",
+						"donation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userTo\": \"player2\",\r\n    \"amount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7020/api/user/player1/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7020",
+					"path": [
+						"api",
+						"user",
+						"player1",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate ranking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userTo\": \"player2\",\r\n    \"amount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7020/api/users/ranking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7020",
+					"path": [
+						"api",
+						"users",
+						"ranking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
